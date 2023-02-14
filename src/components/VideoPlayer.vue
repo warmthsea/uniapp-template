@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import videojs from 'video.js'
+// import videojs from 'video.js'
 
 export default {
   name: 'VideoPlayer',
@@ -23,14 +23,14 @@ export default {
     }
   },
   mounted() {
-    this.player = videojs(this.$refs.videoPlayer, this.options, () => {
-      this.player.log('onPlayerReady', this)
-    })
+    // this.player = videojs(this.$refs.videoPlayer, this.options, () => {
+    //   this.player.log('onPlayerReady', this)
+    // })
   },
   beforeDestroy() {
-    if (this.player) {
-      this.player.dispose()
-    }
+    // if (this.player) {
+    //   this.player.dispose()
+    // }
   },
 }
 </script>
