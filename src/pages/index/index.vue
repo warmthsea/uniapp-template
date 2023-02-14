@@ -314,7 +314,9 @@ onLoad(async (option: UiServerType) => {
   let timer = setTimeout(async () => {
     clearTimeout(timer)
     // plus.storage.clear();
-    // await funAwaitTime(100);
+    checkFile.value = ''
+    fileState.fileType = ''
+    await funAwaitTime(1500)
     CONFIG.isRestart && plus.runtime.restart()
   }, CONFIG.times.restartTimes * 60 * 1000)
   // #endif
